@@ -26,7 +26,7 @@
 
   async function create() {
     const newHero = await client.createHero(hero);
-    await goto(`/${Mode[Mode.show]}/${newHero.uuid}`);
+    await goto(`/${Mode[Mode.show]}/${newHero.name}`);
   }
 
   async function deleteHero() {
